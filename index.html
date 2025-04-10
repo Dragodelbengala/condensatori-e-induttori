@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condensatori e Induttori</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Condensatori e Induttori</h1>
+      <p class="subheading">Scopri il mondo dell'elettricità con animazioni e simulazioni interattive!</p>
+    </header>
+
+    <section id="simulation">
+      <div id="circuit-view">
+        <canvas id="circuit-canvas"></canvas>
+      </div>
+
+      <div id="controls">
+        <div class="controls-box">
+          <h3>Imposta i Parametri</h3>
+          <label for="resistance">Resistenza (Ω):</label>
+          <input type="number" id="resistance" value="1000" min="1">
+          
+          <label for="capacitance">Capacità (F):</label>
+          <input type="number" id="capacitance" value="0.001" step="0.0001">
+          
+          <label for="inductance">Induttanza (H):</label>
+          <input type="number" id="inductance" value="0.002" step="0.0001">
+          
+          <button id="start-simulation">Avvia Simulazione</button>
+        </div>
+        
+        <div class="example-box">
+          <h3>Cos'è un Circuito RC?</h3>
+          <p>Un circuito RC è formato da un condensatore e una resistenza. Il condensatore si carica quando è collegato a una fonte di energia, e la velocità di carica dipende dalla resistenza e dalla capacità.</p>
+          <div class="color-box"></div>
+        </div>
+
+        <div class="example-box">
+          <h3>Cos'è un Circuito RL?</h3>
+          <p>In un circuito RL, c'è un induttore che "resiste" al cambiamento di corrente. Quando la corrente cambia, l'induttore cerca di mantenerla costante, e questo crea una sorta di "ritardo".</p>
+          <div class="color-box"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Simulazioni Circuiti Elettrici | Dragone Tomas</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
